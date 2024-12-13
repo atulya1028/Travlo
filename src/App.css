@@ -14,7 +14,7 @@ html,body{
 
 .header{
   display: flex;
-  gap: 140px;
+  gap: 50px;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -25,6 +25,8 @@ html,body{
   list-style-type: none;
   font-size: 20px;
   font-family: 'Montserrat';
+  padding: 10px;
+  border-radius: 5px;
 }
 .header li:hover{
 background-color: aliceblue;
@@ -37,11 +39,14 @@ background-color: aliceblue;
   color: black; 
 }
 
+
+
 .nav{
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-left: 15px !important;
+  padding-right: 15px !important;
 }
 .banner{
   width: 100%;
@@ -140,3 +145,70 @@ background-color: aliceblue;
   justify-content: space-evenly;
   align-items: center;
 }
+
+.client{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.person-box{
+  display: flex;
+  gap: 50px;
+  margin: 10px;
+  width: 50%;
+  font-size: 15px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.client-box{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-box{
+  position: relative;
+  display: flex;
+}
+
+.profile-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-content{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 15px;
+  border: 1px solid #1F7E7A;
+}
+.profile-content a{
+  display: block;
+  text-decoration: none;
+  color: #1F7E7A;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-box:hover .profile-content {
+  display: block;
+}
+
+
